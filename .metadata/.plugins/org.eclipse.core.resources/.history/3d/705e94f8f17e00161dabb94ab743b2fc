@@ -1,0 +1,12 @@
+package com.barclays;
+
+public class Entry {
+ public static void main(String[] args) {
+	 System.out.println("Hello,Worlds!");
+	 Person p;
+	 p= new Person();
+	 p.getAge();
+	 
+	 p = null;
+ }
+}

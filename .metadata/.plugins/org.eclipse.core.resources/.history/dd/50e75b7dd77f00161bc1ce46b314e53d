@@ -1,0 +1,9 @@
+package com.Barclays2;
+
+public class demo1 {
+	static int d = 0;
+
+	public static void main(String[] args) {
+		System.out.println(d);
+	}
+}
