@@ -1120,3 +1120,14 @@ org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-09-21 17:26:18.952
 !MESSAGE Provided SVN information does not match that on disk for project 'Demo-Inheritance-2'.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-09-22 12:40:14.351
+!MESSAGE Could not auto-share project Demo-ExceptionHandling
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'Demo-ExceptionHandling'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-09-22 12:40:14.351
+!MESSAGE Provided SVN information does not match that on disk for project 'Demo-ExceptionHandling'.
