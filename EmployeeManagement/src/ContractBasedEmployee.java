@@ -1,6 +1,7 @@
-
-public class ContractBasedEmployee extends Employee {
+/*
+public class ContractBasedEmployee extend Employee{
 	 private int rate, workingHours;
 	 
 
 }
+*/

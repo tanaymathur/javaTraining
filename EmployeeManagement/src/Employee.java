@@ -2,6 +2,7 @@ class Employee {
 	static int numberOfEmployee = 0;
 	private int id;
 	private String firstName, lastName, salary, grade, joiningDate;
+	private static Employee EmployeeId[] = new Employee[5];
 
 	Employee(String fName, String lastName, String salary, String grade, Date date) {
 		numberOfEmployee++;
@@ -11,6 +12,7 @@ class Employee {
 		this.salary = salary;
 		this.grade = grade;
 		this.joiningDate = date.getDate();
+		EmployeeId[getNumberOfEmployee()-1] = this;
 	}
 
 	public static int getNumberOfEmployee() {
@@ -40,5 +42,15 @@ class Employee {
 	public String getJoiningDate() {
 		return joiningDate;
 	}
+	
+	public static Employee search(int id) throws EmployeeNotFoundException {
+		for (int i = 0; i < EmployeeId.length; i++) {
+			if (EmployeeId[i].id == id) {
+				return EmployeeId[i];
+			}
+		}
+		throw new EmployeeNotFoundException("Employee Not Found");
+		
 
+	}
 }
