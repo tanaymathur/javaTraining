@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class TestStringMethods {
+
+	@Test
+	@Ignore
+	
+	public void test() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void testStringMethods(){
+		String msg = new String("Hello Worlds");
+		String msg1 = new String("Hello Worlds");
+		String msg2 = new String("Hello Worlds");
+		
+		Assert.assertSame(msg2, msg1);
+	}
+	
+
+}

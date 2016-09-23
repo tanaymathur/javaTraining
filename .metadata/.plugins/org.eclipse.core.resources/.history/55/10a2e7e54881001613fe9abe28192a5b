@@ -1,0 +1,14 @@
+
+public class TestAssertion {
+	public static void main(String[] args) {
+		int value = 100;
+		System.out.println("start of tesing");
+		assert(value>0):"value"+value;
+		System.out.println("1st assert passed");
+		value = -100;
+		assert(value>0): "value is "+value;
+		System.out.println("2nd assert passed");
+		System.out.println("End of main");
+	}
+
+}
