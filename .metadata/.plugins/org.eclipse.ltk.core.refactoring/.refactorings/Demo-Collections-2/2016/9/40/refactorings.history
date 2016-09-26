@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;hellow.java&apos; to &apos;Entry.java&apos;&#x0D;&#x0A;- Original project: &apos;Demo-Collections-2&apos;&#x0D;&#x0A;- Destination element: &apos;Entry.java&apos;&#x0D;&#x0A;- Original element: &apos;hellow.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Demo-Inheritance/src&lt;{Entry.java" element1="/src&lt;{hellow.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1474878174160" units="1" version="1.0"/>
+</session>

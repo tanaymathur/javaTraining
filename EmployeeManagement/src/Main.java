@@ -1,13 +1,20 @@
 class Main {
 	public static void main(String args[]) {
 		
-		Contractor contractor = new Contractor("contractor1");
+		Contractor contractor = new Contractor("Sardar Singh");
 		ContractBasedEmployee CbEmployee1 = new ContractBasedEmployee("emp", "1", null, "developer", new Date("01", "07", "2016"), 100, 8, contractor);
 		ContractBasedEmployee CbEmployee2 = new ContractBasedEmployee("emp", "2", null, "developer", new Date("03", "07", "2016"), 90, 8, contractor);
 		ContractBasedEmployee CbEmployee3 = new ContractBasedEmployee("emp", "1", null, "developer", new Date("01", "07", "2016"), 110, 8, contractor);
 		PermanentEmployee permanentEmployee1 = new PermanentEmployee("Perman", "1", "10000", "developer",  new Date("03", "07", "2016"));
 		PermanentEmployee permanentEmployee2 = new PermanentEmployee("Perman", "2", "12222", "developer", new Date("03", "07", "2016"));
 
+		System.out.println(ContractBasedEmployee.getNumberOfCbEmployee());
+		
+		System.out.println(CbEmployee1.getSalary());
+		
+		System.out.println(CbEmployee2.getContractor());
+		
+		System.out.println(contractor.getCbEmployeeList());
 		
 		/*Employee emp[]= new Employee[5];
 		emp[0] = new Employee("Tanay", "Mathur", "1000", "developer", new Date("01", "07", "2016"));

@@ -12,7 +12,20 @@ public class Contractor {
 		numberOfCbEmployeesUnder++;
 	}
 	
+	public String getName(){
+		return name;
+	}
+	
 	public int getCbEmployees(){
 		return numberOfCbEmployeesUnder;
+	}
+	
+	public String getCbEmployeeList(){
+		String list="";
+		for(String it : cbEmpList){
+			list+=it;
+			list+="|";
+		}
+		return list;
 	}
 }

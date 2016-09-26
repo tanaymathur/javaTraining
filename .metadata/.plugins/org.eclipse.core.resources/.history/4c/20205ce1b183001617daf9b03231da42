@@ -1,0 +1,18 @@
+package teststuff;
+//package com.barclays;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class CollectionDemo {
+	public static void main(String[] args) {
+		Map<Long, java.lang.String> entries = new TreeMap<>();
+		entries.put(21984728917492L, "Airtel");
+		entries.put(427184216994821L, "Lion");
+		entries.put(213214215L,"Dog");
+		entries.put(213214215L,"cat");
+		
+		System.out.println(entries.get("21984728917492"));
+	}
+
+}

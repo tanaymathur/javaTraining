@@ -1,6 +1,6 @@
 
 public class EmployeeNotFoundException extends Exception{
-	public EmployeeFoundException(){
+	public EmployeeNotFoundException(){
 		
 	}
 	public EmployeeNotFoundException(String msg){

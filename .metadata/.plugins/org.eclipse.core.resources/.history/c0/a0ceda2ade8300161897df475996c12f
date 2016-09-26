@@ -1,0 +1,13 @@
+import java.util.TreeMap;
+
+
+public class utils {
+	static TreeMap<String,Employee> EmpTreeMap = new TreeMap<>();
+	
+	public utils(String EmpId,Employee emp) {
+		// TODO Auto-generated constructor stub
+		EmpTreeMap.put(EmpId, emp);
+	}
+	
+
+}

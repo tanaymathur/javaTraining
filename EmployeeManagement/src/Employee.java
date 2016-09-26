@@ -1,6 +1,8 @@
+import java.util.TreeSet;
+
 abstract class Employee {
 	static int numberOfEmployee = 0;
-	private int id;
+	private EmpId id;
 	private String firstName, lastName;
 	// private static Employee EmployeeId[] = new Employee[5];
 	protected String salary;
@@ -12,21 +14,21 @@ abstract class Employee {
 	}
 
 	Employee(String fName, String lastName, String salary, String grade, Date date) {
-		this.id = numberOfEmployee;
+		this.id = new EmpId(numberOfEmployee, grade);
 		this.firstName = fName;
 		this.lastName = lastName;
 		this.salary = salary;
 		this.grade = grade;
 		this.joiningDate = date.getDate();
-		// EmployeeId[getNumberOfEmployee()-1] = this;
+		utils.addEmployee(this.id.getEmpId(),this);
 	}
 
 	public static int getNumberOfEmployee() {
 		return numberOfEmployee;
 	}
 
-	public int getId() {
-		return id;
+	public String getId() {
+		return this.id.getEmpId();
 	}
 
 	public String getFirstName() {

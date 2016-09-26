@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestStringMethods" project="Demo-ExceptionHandling" tests="2" started="2" failures="0" errors="0" ignored="1">
-  <testsuite name="TestStringMethods" time="0.0">
-    <testcase name="testStringMethods" classname="TestStringMethods" time="0.0"/>
-    <testcase name="test" classname="TestStringMethods" time="0.0" ignored="true"/>
-  </testsuite>
-</testrun>

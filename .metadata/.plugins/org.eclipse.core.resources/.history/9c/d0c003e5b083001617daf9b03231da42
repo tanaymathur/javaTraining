@@ -1,0 +1,12 @@
+package com.barclays;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class CollectionDemo {
+	public static void main(String[] args) {
+		Map<Integer, String> entries = new TreeMap<>();
+		entries.put(new Integer(123), "dsafsd");
+	}
+
+}

@@ -21,8 +21,12 @@ public class ContractBasedEmployee extends Employee {
 		return Integer.toString(rate * workingHours);
 	}
 	
-	public Contractor getContractor() {
-		return this.contractor;
+	public static int getNumberOfCbEmployee(){
+		return numberOfCbEmployee;
+	}
+	
+	public String getContractor() {
+		return this.contractor.getName();
 	}
 
 }
