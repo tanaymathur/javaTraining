@@ -1,0 +1,55 @@
+package service;
+
+import java.util.Date;
+import java.util.HashMap;
+
+import dao.EmployeeDaoImplForList;
+import domain.Employee;
+
+public class EmployeeServiceImpl implements IEmployeeService {
+	
+	private static EmployeeDaoImplForList employeeDao = new EmployeeDaoImplForList();
+	
+	@Override
+	public void AddEmployee(HashMap<String, Object> employee) {
+		String name =  (String)employee.get("name");
+		int kin_id = (Integer) employee.get("kinId");
+		String email = (String) employee.get("email");
+		int phoneNumber = (int)employee.get("phoneNumber");
+		Date dob = new Date((String)employee.get("dob"));
+		Date dateOfjoining = new Date((String)employee.get("dateOfJoining"));
+		String address = (String)employee.get("address");
+		int deptId = (Integer)employee.get("depId");
+		int projectId = (int) employee.get("projectId");
+		int roleId = (int) employee.get("roleId");
+		
+		Employee emp = new Employee(name, kin_id, email,phoneNumber, dob, dateOfjoining, address, deptId, projectId, roleId); 
+		employeeDao.AddEmployee(emp);
+	}
+
+	@Override
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void RemoveEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void SeachEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

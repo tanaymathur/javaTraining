@@ -1,0 +1,9 @@
+
+public class Account {
+	private int accountId;
+	private int balance;
+	private Customer customer;
+	
+	public Account()
+
+}

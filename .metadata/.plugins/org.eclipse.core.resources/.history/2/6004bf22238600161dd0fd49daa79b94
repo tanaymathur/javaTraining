@@ -1,0 +1,12 @@
+package dao;
+
+import domain.Employee;
+
+public interface IemployeeDao {
+	
+	public void AddEmployee(Employee emp);
+	public void ModifyEmployee();
+	public void RemoveEmployee();
+	public void SearchEmployee();
+	public void getAllEmployee();
+}

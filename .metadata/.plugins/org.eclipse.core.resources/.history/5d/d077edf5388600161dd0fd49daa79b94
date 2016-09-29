@@ -1,0 +1,30 @@
+package views;
+
+import java.util.Scanner;
+
+public class BootClass {
+
+	private static void menuSelection() {
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.println("Enter Name");
+		String name = scan.nextLine();
+		System.out.println("Enter Email");
+		String email = scan.nextLine();
+		System.out.println("Enter PhoneNumber");
+		String phoneNumber = scan.nextLine();
+		System.out.println("Enter Date of birth");
+		String dob = scan.nextLine();
+		System.out.println("Enter Date of Joining");
+		String joiningDate = scan.nextLine();
+		System.out.println("Enter Address");
+		String address = scan.nextLine();
+
+	}
+
+	public static void main(String[] args) {
+		BootClass.menuSelection();
+	}
+
+}

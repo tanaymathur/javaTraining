@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Bank {
+	
+	private String bankName;
+	static int totalBalance=5000;
+	private ArrayList<Account> accountList = new ArrayList<Account>();
+	
+	public Bank(String bankName) {
+		this.bankName = bankName;
+	}
+	
+	public void transfer(Account fromAccount, Account toAccount,int amount){
+		
+	}
+  
+}

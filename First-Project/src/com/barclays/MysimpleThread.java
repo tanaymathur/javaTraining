@@ -1,5 +1,10 @@
 package com.barclays;
 
-public class MysimpleThread {
-
+public class MysimpleThread extends Thread {
+ 
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
 }

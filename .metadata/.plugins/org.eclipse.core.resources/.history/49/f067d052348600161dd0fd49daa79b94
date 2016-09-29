@@ -1,0 +1,44 @@
+package service;
+
+import java.util.HashMap;
+
+import domain.Employee;
+
+public class EmployeeServiceImpl implements IEmployeeService {
+
+	@Override
+	public void AddEmployee(HashMap<String, Object> employee) {
+		String name =  (String)employee.get("name");
+		int kin_id = (Integer) employee.get("kinId");
+		String email = (String) employee.get("email");
+		int phoneNumber = (int)employee.get("phoneNumber");
+		
+		
+		Employee emp = new Employee(,  employee.get("kin_id"), employee.get("email"), phoneNumber, dob, dateOfJoining, address, deptId, projectId, roleId) 
+	}
+
+	@Override
+	public void ModifyEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void RemoveEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void SeachEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,33 @@
+
+public class Main {
+	public static void main(String[] args) {
+		Bank bank = new Bank("Barclays");
+		Teller teller = new Teller(1, bank);
+		
+		Customer saurbh = new Customer(0, "Saurabh");
+		Customer tanay = new Customer(1, "Tanay");
+		Customer arnav = new Customer(2, "Arnava");
+		
+		Account account1 = new Account(0, 10000, tanay);
+		tanay.addAccount(account1);
+		Account account2 = new Account(1, 5000, saurbh);
+		saurbh.addAccount(account2);
+		Account account3 = new Account(2, 7000, arnav);
+		
+		teller.transfer(account1, account2, 4000);
+		System.out.println(account1.getBalance()+"    "+account2.getBalance());
+		
+		
+		Runnable runnable = new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				teller.transfer(account1, account2, 4000);
+				System.out.println(account1.getBalance()+"    "+account2.getBalance());
+			}
+		};
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package dao;
+
+import java.util.ArrayList;
+
+import domain.Employee;
+
+public class EmployeeDaoImplForList implements IemployeeDao {
+	private static ArrayList<Employee> employeeList = new ArrayList<Employee>();
+	
+	@Override
+	static void AddEmployee(Employee emp) {
+		// TODO Auto-generated method stub
+		employeeList.add(emp);
+		
+	}
+
+}

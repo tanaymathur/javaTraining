@@ -22,4 +22,17 @@
 <fullyQualifiedTypeName name="EmpId"/>
 <fullyQualifiedTypeName name="EmployeeNotFoundException"/>
 <fullyQualifiedTypeName name="utils"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="Teller"/>
+<fullyQualifiedTypeName name="Customer"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="Account"/>
+<fullyQualifiedTypeName name="Bank"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="Producer"/>
+<fullyQualifiedTypeName name="Consumer"/>
+<fullyQualifiedTypeName name="Container"/>
 </qualifiedTypeNameHistroy>
