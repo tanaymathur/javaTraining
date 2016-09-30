@@ -2257,3 +2257,14 @@ org.eclipse.core.runtime.CoreException: The class file is not on the classpath
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
 !SUBENTRY 2 org.eclipse.jdt.ui 4 995 2016-09-29 13:34:31.976
 !MESSAGE The class file is not on the classpath
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-09-30 12:20:13.158
+!MESSAGE Could not auto-share project Demo_JDBC
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: Provided SVN information does not match that on disk for project 'Demo_JDBC'.
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-09-30 12:20:13.168
+!MESSAGE Provided SVN information does not match that on disk for project 'Demo_JDBC'.

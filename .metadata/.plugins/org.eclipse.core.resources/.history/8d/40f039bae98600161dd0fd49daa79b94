@@ -1,0 +1,3 @@
+#THIS FILR CONTAINS VENDOR SPECIFIC PROPERTIES
+
+jdbc.driver = com.mysql.jdbc.Driver

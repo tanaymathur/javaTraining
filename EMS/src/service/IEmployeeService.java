@@ -1,5 +1,6 @@
 package service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public interface IEmployeeService {
@@ -8,6 +9,6 @@ public interface IEmployeeService {
 	public void ModifyEmployee();
 	public void RemoveEmployee();
 	public void SeachEmployee();
-	public void getAllEmployee();
+	public ArrayList<HashMap<String, String>> getAllEmployee();
 
 }
