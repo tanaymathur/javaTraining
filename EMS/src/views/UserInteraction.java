@@ -44,10 +44,7 @@ public class UserInteraction {
 	public static void getAllEmployee() {
 		ArrayList<HashMap<String, String>> employeeList = employeeService.getAllEmployee();
 		for (int it = 0; it < employeeList.size(); it++) {
-			System.out.println(employeeList.get(it).get("kinId"));
-			System.out.println(employeeList.get(it).get("name"));
-			System.out.println(employeeList.get(it).get("email"));
-			System.out.println(employeeList.get(it).get("phoneNumber"));
+			display(employeeList.get(it));
 		}
 	}
 
@@ -56,13 +53,45 @@ public class UserInteraction {
 		System.out.println("Press 2  to Search From Email");
 		System.out.println("Press 3 to EmployeeId");
 		int choice = Integer.parseInt(scan.nextLine());
+		HashMap<String, String> searchInput = new HashMap<String, String>();
+		HashMap<String, String> searchOutput=null;
 		switch (choice) {
-		case 1:
+		case 1:	
 			System.out.println("Enter kinId");
-			int id = Integer.parseInt(scan.nextLine());
-			employeeService.SeachEmployee(id);
+			 String id = scan.nextLine();
+			 searchInput.put("id", id);
+			 searchOutput=employeeService.SeachEmployee(searchInput);
+			break;
+		case 2:
+			System.out.println("Enter email");
+			String email = scan.nextLine();
+			searchInput.put("email", email);
+			searchOutput=employeeService.SeachEmployee(searchInput);
+			break;
+		case 3:
+			System.out.println("Enter EmployeeID");
+			String employeeId = scan.nextLine();
+			searchInput.put("employeeId", employeeId);
+			searchOutput=employeeService.SeachEmployee(searchInput);
+		default:
+			System.out.println("Wrong Choice");
 		}
+		if(searchOutput!=null){
+			display(searchOutput);
+		}else
+			System.out.println("Employee doesn't exists");
 
+	}
+	
+	public static void modifyEmployee(){
+		
+	}
+	
+	public static void display(HashMap<String, String> employee){
+		System.out.println(employee.get("kinId"));
+		System.out.println(employee.get("name"));
+		System.out.println(employee.get("email"));
+		System.out.println(employee.get("phoneNumber"));
 	}
 
 }

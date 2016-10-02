@@ -31,9 +31,13 @@ public class EmployeeDaoImplForList implements IemployeeDao {
 	}
 
 	@Override
-	public void SearchEmployee(Employee emp) {
+	public Employee SearchEmployee(Object emp){
 		// TODO Auto-generated method stub
-		
+		for(int it = 0; it<employeeList.size();it++){
+			if(employeeList.get(it).getEmail()== (String)emp || employeeList.get(it).getKinId()== (int)emp) 
+				return employeeList.get(it);
+		}
+		return null;
 	}
 
 	@Override

@@ -42,20 +42,37 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	}
 
 	@Override
-	public void SeachEmployee() {
+	public HashMap<String, String> SeachEmployee(HashMap<String, String> searchInput) {
 		// TODO Auto-generated method stub
-		
+		HashMap<String, String> employee = new HashMap<String, String>();
+		Employee emp = null;
+		if (searchInput.containsKey("id"))
+			emp = employeeDao.SearchEmployee(Integer.parseInt(searchInput.get("id")));
+		else if (searchInput.containsKey("email"))
+			emp = employeeDao.SearchEmployee(searchInput.get("email"));
+		else if (searchInput.containsKey("employeeId"))
+			emp = employeeDao.SearchEmployee(searchInput.get("employeeId"));
+
+		if (!emp.equals(null)) {
+			employee.put("kinId", Integer.toString(emp.getKinId()));
+			employee.put("name", emp.getName());
+			employee.put("email", emp.getEmail());
+			employee.put("phoneNumber", Integer.toString(emp.getPhoneNumber()));
+
+			return employee;
+		} else
+			return null;
 
 	}
 
 	@Override
-	public ArrayList<HashMap<String, String>>  getAllEmployee() {
+	public ArrayList<HashMap<String, String>> getAllEmployee() {
 		// TODO Auto-generated method stub
 		ArrayList<HashMap<String, String>> employeeList = new ArrayList<HashMap<String, String>>();
 		for (Employee emp : employeeDao.getAllEmployee()) {
-			
+
 			HashMap<String, String> employee = new HashMap<String, String>();
-			
+
 			employee.put("kinId", Integer.toString(emp.getKinId()));
 			employee.put("name", emp.getName());
 			employee.put("email", emp.getEmail());

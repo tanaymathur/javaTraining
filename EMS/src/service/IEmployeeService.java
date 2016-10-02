@@ -8,7 +8,7 @@ public interface IEmployeeService {
 	public void AddEmployee(HashMap<String, String> employee);
 	public void ModifyEmployee();
 	public void RemoveEmployee();
-	public void SeachEmployee();
+	public HashMap<String, String> SeachEmployee(HashMap<String, String> searchInput);
 	public ArrayList<HashMap<String, String>> getAllEmployee();
 
 }
