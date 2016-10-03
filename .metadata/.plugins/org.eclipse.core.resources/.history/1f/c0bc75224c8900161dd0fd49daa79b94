@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class Assignment5 {
+	public static void main(String[] args) throws IOException {
+
+		InputStreamReader reader = new InputStreamReader(System.in);
+		BufferedReader input = new BufferedReader(reader);
+		do {
+			System.out.println("Enter String");
+			String s = input.readLine();
+			if (s.equals("break"))
+				break;
+			int stringLength = s.length();
+			String newString = "";
+			/*
+			 * for (int it = 0; it < stringLength; it++) { String ch =
+			 * (s.substring(it, it+1)).; ch.to
+			 * 
+			 * }
+			 */
+			newString = s.toUpperCase();
+			System.out.println(newString);
+		} while (true);
+		
+		System.out.println("Program ended");
+	}
+}

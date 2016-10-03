@@ -1,0 +1,16 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Entry {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		
+		String fileName = "test.pmtv";
+		
+		try(FileOutputStream Iout = new FileOutputStream(fileName)){
+			IOUtils.writePrimitive(Iout);
+		}
+		
+	}
+
+}

@@ -1,0 +1,3 @@
+create database ems;
+
+create table employee (kinId int unique not null,email varchar(255) unique,phoneNumber BIGINT , dob Date, dateOfJoining Date, address text, deptId int , projectId int ,roleId int)

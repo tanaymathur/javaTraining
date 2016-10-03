@@ -87,11 +87,18 @@ public class UserInteraction {
 		
 	}
 	
+	
 	public static void display(HashMap<String, String> employee){
 		System.out.println(employee.get("kinId"));
 		System.out.println(employee.get("name"));
 		System.out.println(employee.get("email"));
 		System.out.println(employee.get("phoneNumber"));
+	}
+
+	public static void removeEmployee() {
+		// TODO Auto-generated method stub
+		System.out.println("Press 1  to remove employee From kinId");
+//		sca
 	}
 
 }

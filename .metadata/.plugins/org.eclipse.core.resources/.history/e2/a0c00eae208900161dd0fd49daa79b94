@@ -1,0 +1,5 @@
+Interface I{
+	default void show(){
+		System.out.pr
+	}
+}
