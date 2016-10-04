@@ -14,13 +14,14 @@ import javax.xml.ws.Response;
 public class MyHttpService {
 
 	public static void main(String[] args) throws IOException {
-		int port=80;
+		int port=1337;
 		ServerSocket service = new ServerSocket(port);
 		System.out.println("Waiting for a connection");
 		Socket clientInfo = service.accept();
 		System.out.println(clientInfo);
 		
 		InputStream in= clientInfo.getInputStream();   //InputStream is byte type
+		
 		
 		InputStreamReader bridge = new InputStreamReader(in);
 		BufferedReader bReader = new BufferedReader(bridge);
@@ -32,13 +33,16 @@ public class MyHttpService {
 		while(true){
 			String line = bReader.readLine();
 			
-			if(line==null)
-				break;
+		
 			
-			System.out.println(line);
+
+			if(line.isEmpty())
+				break;
+			System.out.println("##"+line);
+			
 			bridge1.println("<p>Hello</p>");
-			bridge1.flush();
-			break;
+//			bridge1.flush();
+			
 			
 //			os.p
 			/*OutputStreamWriter bridgeOut = new OutputStreamWriter(out);
@@ -46,6 +50,7 @@ public class MyHttpService {
 			clientInfo.*/
 //			clientInfo.close();
 		}
+		bridge1.close();
 		
 		
 	}

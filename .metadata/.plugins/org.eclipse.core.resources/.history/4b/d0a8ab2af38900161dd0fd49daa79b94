@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+public class serverWorker extends Thread {
+	public void run(Socket clientInfo) throws IOException {
+		System.out.println(clientInfo);
+
+		BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
+
+		InputStream in = clientInfo.getInputStream();
+
+		InputStreamReader bridge = new InputStreamReader(in);
+		BufferedReader bReader = new BufferedReader(bridge);
+
+		OutputStream os = clientInfo.getOutputStream();
+		PrintWriter bridge1 = new PrintWriter(os);
+
+		while (true) {
+			String line = bReader.readLine();
+
+		}
+	}
+
+}
