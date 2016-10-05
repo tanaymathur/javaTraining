@@ -1,0 +1,16 @@
+package util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Jdbc {
+	public static void connection() {
+		String url = props.getProperty("jdbc.url");
+
+		Connection dbConnection;
+		dbConnection = DriverManager.getConnection(url);
+
+		System.out.println("Connection Successfult?" + (dbConnection != null));
+	}
+
+}

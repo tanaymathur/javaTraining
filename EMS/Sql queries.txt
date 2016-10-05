@@ -1,3 +1,7 @@
 create database ems;
 
 create table employee (kinId int unique not null,email varchar(255) unique,phoneNumber BIGINT , dob Date, dateOfJoining Date, address text, deptId int , projectId int ,roleId int)
+
+
+
+insert into employee(kinId,email,phoneNumber,dob,dateOfJoining,address) values(123,'t@gmail.com',123421421,'1993-02-12','2016-02-12','address');
