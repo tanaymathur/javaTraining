@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +31,6 @@ public class HeaderServlet extends HttpServlet{
 			out.println("<td>"+header+"</td><td>"+value+"</td>");
 			out.println("</tr>");
 		}
-		
 		out.println("</table>");
 		out.println("</html></body>");
 	}

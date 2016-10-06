@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class Jdbc {
-private static Properties props = new Properties();
+public static Properties props = new Properties();
 	static {
 		FileInputStream file;
 		try {
