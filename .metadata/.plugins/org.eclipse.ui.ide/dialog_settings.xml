@@ -3,11 +3,15 @@
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\training\Documents\dev\demos\eclipse-workspace\mvc-project\eclipse-workspace\VIM-TODOs"/>
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Users\training\Documents\dev\demos\demo-ds.zip"/>
+			<item value="C:\Users\training\Documents\dev\demos\demo-servlets-2.zip"/>
 			<item value="C:\Users\training\Documents\dev\demos\TestSynchronization.zip"/>
 			<item value="C:\Users\training\Documents\dev\demos\demo-collections-2.zip"/>
 			<item value="C:\Users\training\Documents\dev\demos\demo-collections.zip"/>

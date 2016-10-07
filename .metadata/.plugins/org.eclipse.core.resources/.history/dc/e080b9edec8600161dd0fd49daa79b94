@@ -1,5 +1,0 @@
-#THIS FILR CONTAINS VENDOR SPECIFIC PROPERTIES
-
-jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/test
-jdbc.query=insert into messages("Hello World!");

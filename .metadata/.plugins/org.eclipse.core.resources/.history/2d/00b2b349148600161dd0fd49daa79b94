@@ -1,9 +1,0 @@
-package domain;
-
-public class Project {
-	private int projectId;
-	private String name;
-	private String desc;
-	private int deptId;
-
-}
