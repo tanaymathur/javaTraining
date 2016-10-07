@@ -67,7 +67,7 @@ public class EmployeeDaoImplForList implements IemployeeDao {
 		// TODO Auto-generated method stub
 		try(Connection dbConnection=Jdbc.connection()) {
 			
-	 		String =props.getProperty("jdbc.query.parameterizedSearch");		
+	 		String insertQuery=props.getProperty("jdbc.query.parameterizedSearch");		
 	 		
 	 		try(PreparedStatement insertStatement = dbConnection.prepareStatement(insertQuery)){
 			  	

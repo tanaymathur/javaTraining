@@ -20,8 +20,11 @@ public class ShoppingCart {
 		return (Set<String>) this.productIds;
 	}
 
-	public void setProductList(String newProductIds) {
+	public void setProductList(String[] newProductIds) {
 		// TODO:3 add newProductIds into existing list of product ids
-		this.productIds.add(newProductIds);
+		for (int it = 0; it < newProductIds.length; it++) {
+			this.productIds.add(newProductIds[it]);
+		}
+		
 	}
 }
