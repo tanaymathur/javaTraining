@@ -7,14 +7,14 @@ public class Employee {
 	private String name;
 	private int kinId;
 	private String email;
-	private int phoneNumber;
+	private long phoneNumber;
 	private Date dob, dateOfJoining;
 	private String address;
 	private int deptId;
 	private int projectId;
 	private int roleId;
 
-	public Employee(String name, int kin_id, String email, int phoneNumber, Date dob,
+	public Employee(String name, int kin_id, String email, long phoneNumber, Date dob,
 			Date dateOfJoining, String address, int deptId, int projectId, int roleId) {
 //		this.Employee_id = employee_id;
 		this.name = name;
@@ -41,16 +41,16 @@ public class Employee {
 		return name;
 	}
 
-	public int getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public Date getDob() {
-		return dob;
+	public String getDob() {
+		return null;
 	}
 
-	public Date getDateOfJoining() {
-		return dateOfJoining;
+	public String getDateOfJoining() {
+		return null;
 	}
 
 	public String getAddress() {

@@ -16,7 +16,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		String name = (String) employee.get("name");
 		int kin_id = Integer.parseInt(employee.get("kinId"));
 		String email = (String) employee.get("email");
-		int phoneNumber = Integer.parseInt(employee.get("phoneNumber"));
+		long phoneNumber = Long.parseLong(employee.get("phoneNumber"));
 		Date dob = new Date((String) employee.get("dob"));
 		Date dateOfjoining = new Date((String) employee.get("dateOfJoining"));
 		String address = (String) employee.get("address");
@@ -57,7 +57,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 			employee.put("kinId", Integer.toString(emp.getKinId()));
 			employee.put("name", emp.getName());
 			employee.put("email", emp.getEmail());
-			employee.put("phoneNumber", Integer.toString(emp.getPhoneNumber()));
+			employee.put("phoneNumber", Long.toString(emp.getPhoneNumber()));
 
 			return employee;
 		} else
@@ -76,7 +76,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 			employee.put("kinId", Integer.toString(emp.getKinId()));
 			employee.put("name", emp.getName());
 			employee.put("email", emp.getEmail());
-			employee.put("phoneNumber", Integer.toString(emp.getPhoneNumber()));
+			employee.put("phoneNumber", Long.toString(emp.getPhoneNumber()));
 
 			employeeList.add(employee);
 

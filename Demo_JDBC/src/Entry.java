@@ -50,7 +50,13 @@ public class Entry {
     	if(insertStatement!=null)
     		insertStatement.close();
     }*/
-    
+    String insertQuery=props.getProperty("jdbc.query.parmeterizedInsert");
+    try(PreparedStatement insertStatement=dbConnection.prepareStatement(insertQuery)){
+    	
+    	String msg = "THIS IS JAVA";
+    	insertStatement.setString(1, msg);
+    	insertStatement.executeUpdate();
+       }
     try(Statement selectStatement = dbConnection.createStatement()){
     	String selectQuery = props.getProperty("jdbc.query.select");
     	
@@ -62,13 +68,7 @@ public class Entry {
     		System.out.println(message);
     	}
     }
-    String insertQuery=props.getProperty("jdbc.query.parmeterizedInsert");
-    try(PreparedStatement insertStatement=dbConnection.prepareStatement(insertQuery)){
-    	
-    	String msg = "THIS IS JAVA";
-    	insertStatement.setString(1, msg);
-    	insertStatement.executeUpdate();
-       }
+   
     
 	}
 
