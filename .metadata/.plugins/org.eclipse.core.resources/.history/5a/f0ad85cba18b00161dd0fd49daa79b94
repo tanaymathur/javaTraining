@@ -1,7 +1,0 @@
-#THIS FILR CONTAINS VENDOR SPECIFIC PROPERTIES
-
-jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/ems
-jdbc.query.insert=insert into messages values("Hello World3!")
-jdbc.query.select=select * from messages
-jdbc.query.parmeterizedInsert=insert into messages values(?)

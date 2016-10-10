@@ -1,7 +1,0 @@
-
-public class serverWorker extends Thread{
-	public void run(){
-		
-	}
-
-}

@@ -33,21 +33,26 @@ public class StoreCartDetailsServlet extends HttpServlet{
 //		and assign "shoppingCart" as attribute name for this newly created ShoppingCart
 		
 		if(cartRef==null){
+			System.out.println("sgfgsjka");
 			cartRef= new ShoppingCart();
 		}
 
 //		TODO:4	Read product ids from request parameter named as "bookID"
-		String[] prouctID = request.getParameterValues("bookId");
+		String[] prouctID = request.getParameterValues("bookID");
 //		TODO:5 add these product ids in the ShoppingCart object referenced by "cartRef" local variable
 		cartRef.setProductList(prouctID);
-		
+		session.setAttribute("shoppingCart",cartRef);
 //		TODO:6	if the user clicks "Shop More?" in "bookCatelogue.html", 
 //		then redirect web-client to resource named as "categories.html"
-		if(request.getParameter("continue") != null){
-			response.encodeRedirectURL("bookCatelogue.html");
-		}else if(request.getParameter("Check Out") != null){
-			response.encodeUK()
+		
+		String url=null;
+		if(request.getParameter("continue") != null&&request.getParameter("continue") == "Shop More?"){
+			url = response.encodeURL("categories.html");
+			
+		}else if(request.getParameterValues("checkout") != null){
+			url = response.encodeURL("displayDetails");
 		}
+		response.sendRedirect(url);
 		
 //		TODO:7	if the user clicks "Check Out" in "bookCatelogue.html", 
 //		then redirect web-client to resource named as "displayDetails"

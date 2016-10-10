@@ -12,6 +12,13 @@ public class Person {
 		name = "NOt Avaail";
 		age = 23;
 	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 	public String getName(){
 		return name;

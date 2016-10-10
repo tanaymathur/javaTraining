@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Oct 10 17:23:19 IST 2016
+org.eclipse.jst.j2ee.server\:First-Project=WEB-INF/lib/First-Project.jar
+org.eclipse.jst.j2ee.server\:Lab_2.0=WEB-INF/lib/Lab_2.0.jar
