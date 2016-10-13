@@ -30,7 +30,7 @@
 
 <%-- Write a scriptlet to display product name and its id as checkboxes 
 			from "productEntries" member variable--%>
-
+	
 <!-- 
 	FOR EXAMPLE :----------
 	

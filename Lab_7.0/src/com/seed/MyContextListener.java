@@ -22,7 +22,7 @@ public class MyContextListener implements ServletContextListener{
 
 		ServletContext application = event.getServletContext();
 
-//		Assign scoped variable names(attribute) for product repository in APPLICATION_SCOPE
+//		Assign scoped variable names(attribute) for product repository in APPLICATION_SCOPE		
 		String productMapAttributeID = "entries.products";
 		application.setAttribute(productMapAttributeID, productEntries);
 		

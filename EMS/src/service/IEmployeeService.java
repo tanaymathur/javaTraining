@@ -5,10 +5,10 @@ import java.util.HashMap;
 
 public interface IEmployeeService {
 	
-	public void AddEmployee(HashMap<String, String> employee);
-	public void ModifyEmployee();
-	public void RemoveEmployee();
-	public HashMap<String, String> SeachEmployee(HashMap<String, String> searchInput);
+	public HashMap<String, String> AddEmployee(HashMap<String, String> employee);
+	public HashMap<String, String> ModifyEmployee(HashMap<String, String> modifyEmployee);
+	public HashMap<String, String> RemoveEmployee(HashMap<String, String> removeEmployee);
+	public HashMap<String, String> SeachEmployee(HashMap<String, String> searchEmployee);
 	public ArrayList<HashMap<String, String>> getAllEmployee();
 
 }

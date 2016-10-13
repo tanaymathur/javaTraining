@@ -1,0 +1,14 @@
+package service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public interface IEmployeeService {
+	
+	public void AddEmployee(HashMap<String, String> employee);
+	public void ModifyEmployee(HashMap<String, String> modifyEmployee);
+	public HashMap<String, String> RemoveEmployee(HashMap<String, String> removeInput);
+	public HashMap<String, String> SeachEmployee(HashMap<String, String> searchInput);
+	public ArrayList<HashMap<String, String>> getAllEmployee();
+
+}
