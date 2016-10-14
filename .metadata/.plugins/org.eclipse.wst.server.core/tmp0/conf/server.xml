@@ -124,20 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Demo-DynamicWeb-2" path="/Demo-DynamicWeb-2" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DynamicWeb-2"/><Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Demo-JSP-2" path="/Demo-JSP-2" reloadable="true" source="org.eclipse.jst.jee.server:Demo-JSP-2"/><Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Lab_3.0" path="/Lab_3.0" reloadable="true" source="org.eclipse.jst.jee.server:Lab_3.0">
-
-<!-- 
-<Resource name="jdbc/VIMDataSource" auth="Container"
-              type="javax.sql.DataSource" maxActive="100" 
-              maxIdle="30" maxWait="10000"
-              username="VIM" password="seed123" 
-              driverClassName="oracle.jdbc.driver.OracleDriver"
-              url="jdbc:oracle:thin:@localhost:1521:XE"/> 
-               -->
-              
-
-<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/ShoppingAppDataSource" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/ShoppingApp" username="root"/> 
-</Context><Context cookies="false" docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Demo-Spring-Web" path="/myAppWithSpring" reloadable="true" source="org.eclipse.jst.jee.server:Demo-Spring-Web">
+      <Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context cookies="false" docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Demo@FormHandlingSpring" path="/forms" reloadable="true" source="org.eclipse.jst.jee.server:Demo@FormHandlingSpring">
 
 <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MyDataSource" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/test"/>
               

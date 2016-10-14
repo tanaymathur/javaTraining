@@ -1,0 +1,12 @@
+package com.cg;
+
+import javax.sql.DataSource;
+
+public class UserDao {
+	private DataSource datasource;
+	
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+	}
+
+}

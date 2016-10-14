@@ -1,0 +1,22 @@
+package com.cg;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class UserDao {
+	private DataSource datasource;
+	
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+	}
+	
+	public void connection(){
+		
+		ApplicationContext appContext = ClassPathXmlApplicationContext("applicationContext.xml");
+		
+	}
+	
+
+}
