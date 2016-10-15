@@ -129,7 +129,12 @@
 <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MyDataSource" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/test"/>
               
               
-</Context></Host>
+</Context><Context cookies="false" docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Demo-Spring-Web" path="/myAppWithSpring" reloadable="true" source="org.eclipse.jst.jee.server:Demo-Spring-Web">
+
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MyDataSource" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/test"/>
+              
+              
+</Context><Context docBase="C:\Users\training\Documents\dev\demos\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EMS" path="/EMS" reloadable="true" source="org.eclipse.jst.jee.server:EMS"/></Host>
     </Engine>
   </Service>
 </Server>

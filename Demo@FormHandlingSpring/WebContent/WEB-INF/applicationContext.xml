@@ -11,11 +11,18 @@
 
 	
 
+
 	<jee:jndi-lookup id="VIMDataSource" jndi-name="java:/comp/env/jdbc/MyDataSource"
 		expected-type="javax.sql.DataSource" />
 		
-	
+		<context:component-scan base-package="com.cg" />
+	<context:annotation-config />
+	<bean id="uDao" class="com.cg.UserDao">
+		<!-- <property name="datasource" ref="VIMDataSource"></property>
+		<property name="shireen" ref="message"></property> -->
+	</bean>
 	  
+	 <bean id="message" class="java.lang.String" /> 
 	<bean id="userDto" class="com.cg.UserDTO"/>		
 		
 </beans>

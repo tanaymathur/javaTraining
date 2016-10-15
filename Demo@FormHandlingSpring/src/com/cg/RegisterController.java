@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Controller;
@@ -17,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RegisterController implements ApplicationContextAware {
 
 	private UserDTO dtoRef;
-	private UserDao userDao = new UserDao();
+	@Autowired
+	private UserDao uDao;
 	
 	{
     	dtoRef = new UserDTO();
@@ -34,8 +36,8 @@ public class RegisterController implements ApplicationContextAware {
         model.put("userForm", userForm);
 */      
     	
-   
-    	userDao.connection();
+    	System.out.println("beanDAO"+uDao.getShireen());
+    	uDao.connection();
         List<String> professionList = new ArrayList<String>();
         professionList.add("Developer");
         professionList.add("Designer");

@@ -18,16 +18,26 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 @Service
 public class UserDao{
 	
-	private static DataSource datasource;
+	private DataSource datasource;
+	private String shireen;
+	
+	@Autowired
+	public void setShireen(String shireen) {
+		this.shireen = shireen;
+		System.out.println("inside shireen"+shireen.length());
+	}
 
 	@Autowired
-	public void setDatasource(DataSource datasource) {  System.out.println("!!"+datasource);
+	public void setDatasource(DataSource datasource) {
 		this.datasource = datasource;
 		System.out.println("Datasource Set");
 	}
 	
 	public DataSource getDatasource() {
 		return datasource;
+	}
+	public String getShireen() {
+		return shireen;
 	}
 	
 	public void connection() {
