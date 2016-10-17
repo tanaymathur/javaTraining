@@ -1,0 +1,27 @@
+package controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping(value = "/controller")
+public class controller {
+	private static final String ACTION_KEY = "action";
+	private static final String VIEW_CAR_LIST_ACTION = "viewCarList";
+	private static final String ADD_CAR_ACTION = "addCar";
+	private static final String SAVE_CAR_ACTION = "saveCar";
+	private static final String EDIT_CAR_ACTION = "editCar";
+	private static final String DELETE_CAR_ACTION = "deleteCar";
+	private static final String ERROR_KEY = "errorMessage";
+
+	public String RouteRequest(@RequestParam("query") String query, Map<String, Object> model) {
+
+		if (query)
+
+			return null;
+
+	}
+}

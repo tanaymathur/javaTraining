@@ -7,8 +7,8 @@
 <title>Add Employee</title>
 </head>
 <body>
-<form action="ControllerServlet?create" method="post" >
-<input type="hidden" name= "formType" value = "addEmployee">
+<form action="ControllerServlet?query=create" method="post" >
+<!-- <input type="hidden" name= "formType" value = "addEmployee"> -->
 Name <input type="text" name="name"/><br>
 Kin ID <input type="text" name="kinID"/><br>
 Phone No <input type="text" name="phoneNo" /><br>
